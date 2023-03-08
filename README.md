@@ -30,10 +30,14 @@ The sum of squared absolute values is defined as
 
 <!-- <equation class="equation" label="eq:sum_squared_absolute_values" align="center" raw="s = \sum_{i=0}^{n-1} x_i^2" alt="Equation for the sum of squared absolute values."> -->
 
-<div class="equation" align="center" data-raw-text="s = \sum_{i=0}^{n-1} x_i^2" data-equation="eq:sum_squared_absolute_values">
+```math
+s = \sum_{i=0}^{n-1} x_i^2
+```
+
+<!-- <div class="equation" align="center" data-raw-text="s = \sum_{i=0}^{n-1} x_i^2" data-equation="eq:sum_squared_absolute_values">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e004d6b9831fc769f3f50479c69e8d7c2afdbe2/lib/node_modules/@stdlib/stats/incr/nansumabs2/docs/img/equation_sum_squared_absolute_values.svg" alt="Equation for the sum of squared absolute values.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -41,38 +45,30 @@ The sum of squared absolute values is defined as
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-incr-nansumabs2
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-incrnansumabs2 = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-nansumabs2@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var incrnansumabs2 = require( 'path/to/vendor/umd/stats-incr-nansumabs2/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-nansumabs2@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.incrnansumabs2;
-})();
-</script>
+var incrnansumabs2 = require( '@stdlib/stats-incr-nansumabs2' );
 ```
 
 #### incrnansumabs2()
@@ -127,14 +123,9 @@ sum = accumulator();
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-nansumabs2@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var incrnansumabs2 = require( '@stdlib/stats-incr-nansumabs2' );
 
 var accumulator;
 var v;
@@ -149,11 +140,6 @@ for ( i = 0; i < 100; i++ ) {
     accumulator( v );
 }
 console.log( accumulator() );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -229,7 +215,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -247,11 +233,11 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/incr/nansum]: https://github.com/stdlib-js/stats-incr-nansum/tree/umd
+[@stdlib/stats/incr/nansum]: https://github.com/stdlib-js/stats-incr-nansum
 
-[@stdlib/stats/incr/nansumabs]: https://github.com/stdlib-js/stats-incr-nansumabs/tree/umd
+[@stdlib/stats/incr/nansumabs]: https://github.com/stdlib-js/stats-incr-nansumabs
 
-[@stdlib/stats/incr/sumabs2]: https://github.com/stdlib-js/stats-incr-sumabs2/tree/umd
+[@stdlib/stats/incr/sumabs2]: https://github.com/stdlib-js/stats-incr-sumabs2
 
 <!-- </related-links> -->
 
