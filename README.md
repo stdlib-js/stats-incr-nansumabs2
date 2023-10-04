@@ -63,7 +63,7 @@ s = \sum_{i=0}^{n-1} x_i^2
 ## Usage
 
 ```javascript
-import incrnansumabs2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-nansumabs2@esm/index.mjs';
+import incrnansumabs2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-nansumabs2@v0.1.1-esm/index.mjs';
 ```
 
 #### incrnansumabs2()
@@ -125,7 +125,7 @@ sum = accumulator();
 <script type="module">
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import incrnansumabs2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-nansumabs2@esm/index.mjs';
+import incrnansumabs2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-nansumabs2@v0.1.1-esm/index.mjs';
 
 var accumulator;
 var v;
